@@ -1,0 +1,291 @@
+
+<div class="header">
+        <div class="menu">
+            <h1 (click)="sendAction('top');">Zakura X</h1>
+            <ul>
+                <li (click)="sendAction('waifu');">opensea</li>
+                <li (click)="sendAction('roadmap');">ROADMAP</li>
+                <li (click)="sendAction('team');">TEAM</li>
+                <li (click)="sendAction('faq');">FAQ</li>
+                <li>
+                    <a href="#" target="_blank"><i class="twitter icon"></i></a>
+                    <a href="#" target="_blank"><i class="instagram icon"></i></a>
+                    <a href="#" target="_blank"><i class="discord icon"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-movil">
+            <h1>
+                <span (click)="sendAction('top');">Zakura X</span>
+                <i class="bars icon" (click)="toggleMenuMovil( !showMenu );"></i>
+            </h1>
+            <div class="sidebar-movil" #menuMovil>
+                <h1>
+                    <span (click)="sendAction('top');toggleMenuMovil(false);">Zakura X</span>
+                    <i class="bars icon" (click)="toggleMenuMovil( !showMenu );"></i>
+                </h1>
+                <ul>
+                    <li (click)="sendAction('waifu');toggleMenuMovil(false);">
+                        opensea
+                        <i class="caret right icon"></i>
+                    </li>
+                    <li (click)="sendAction('roadmap');toggleMenuMovil(false);">
+                        ROADMAP
+                        <i class="caret right icon"></i>
+                    </li>
+                    <li (click)="sendAction('team');toggleMenuMovil(false);">
+                        TEAM
+                        <i class="caret right icon"></i>
+                    </li>
+                    <li (click)="sendAction('faq');toggleMenuMovil(false);">
+                        FAQ
+                        <i class="caret right icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page">
+    <div class="main">
+        <img class="banner-img" src="../../assets/banner.jpg">
+        <section>
+            <div class="side-left">
+                <h2>Welcome to ZAKURA X</h2>
+                <p>
+                    Zakura X is 9,999 art pieces drawn by Anime artist Desi and individually 
+                    chosen by the Zakura X team! Zakura X lives in the Ethereum Block chain 
+                    after an incident in her hometown of Osaka, Japan left her trapped in the Metaverse.  
+                    Zakura X NFTs are 9,999 different moments in her travels throughout the 
+                    metaverse each one giving their holders history of her past and future. 
+                    Owning a Zakura X grants you membership to Zakura X private channels and holder only perks!
+                </p>
+            </div>
+            <div class="side-right">
+                <swiper
+                    [config]="config"
+                    #swiper
+                >
+                    <ng-template swiperSlide>
+                        <div class="item-carousel">
+                            <img src="../../assets/1.png" alt="1.png">
+                        </div>
+                    </ng-template>
+                    <ng-template swiperSlide>
+                        <div class="item-carousel">
+                            <img src="../../assets/2.png" alt="2.png">
+                        </div>
+                    </ng-template>
+                    <ng-template swiperSlide>
+                        <div class="item-carousel">
+                            <img src="../../assets/3.png" alt="3.png">
+                        </div>
+                    </ng-template>
+                    <ng-template swiperSlide>
+                        <div class="item-carousel">
+                            <img src="../../assets/4.png" alt="4.png">
+                        </div>
+                    </ng-template>
+                    <ng-template swiperSlide>
+                        <div class="item-carousel">
+                            <img src="../../assets/5.png" alt="5.png">
+                        </div>
+                    </ng-template>
+                    <ng-template swiperSlide>
+                        <div class="item-carousel">
+                            <img src="../../assets/6.png" alt="6.png">
+                        </div>
+                    </ng-template>
+                </swiper>
+                <button (click)="slidePrev()"><i class="long arrow alternate left icon"></i></button>
+                <p>The Zakura X Collection</p>
+                <button (click)="slideNext()"><i class="long arrow alternate right icon"></i></button>
+            </div>
+            
+        </section>
+        
+        
+
+        <div class="buy-an-ape" #waifu>
+            <h2>OpenSea</h2>
+            <p>
+                Link will be available<br>at mint.
+            </p>
+            <button>OpenSea</button>
+        </div>
+
+        <div class="roadmap" #roadmap>
+            <h2>roadmap</h2>
+            <ul class="element">
+                <li>
+                    <div class="item-porcent">
+                        <button>20<span>%</span></button>
+                    </div>
+                    <div class="item-content">
+                        .5eth will be airdropped to two random early adopters and holders of Zakura X.
+                        We will also be giving away Zakura X NFTs to our community members.
+                    </div>
+                    <div class="vertical-line"></div>
+                </li>
+                <li>
+                    <div class="item-porcent"><button>40<span>%</span></button></div>
+                    <div class="item-content">
+                        A community account will be developed where $20,000 will be added to donate to a Manga Charity of the community's choice. 
+                        .5eth more will be airdropped to two random early adopters and holders of Zakura X.
+                    </div>
+                    <div class="vertical-line"></div>
+                </li>
+                <li>
+                    <div class="item-porcent"><button>60<span>%</span></button></div>
+                    <div class="item-content">
+                        Exclusive Zakura X merch will be developed showing off designs which are already in the works. 
+                        .5eth more will be airdropped to two random early adopters and holders of Zakura X.
+                    </div>
+                    <div class="vertical-line"></div>
+                </li>
+                <li>
+                    <div class="item-porcent"><button>80<span>%</span></button></div>
+                    <div class="item-content">
+                        $20,000 more will be added to the community fund. We will start this with 2.5% of the 
+                        community fees going back into the community fund, where the community will decide on 
+                        the outcome of these funds. .5eth more will be airdropped to two random early adopters 
+                        and holders of Zakura X.
+                    </div>
+                    <div class="vertical-line"></div>
+                </li>
+                <li>
+                    <div class="item-porcent"><button>100<span>%</span></button></div>
+                    <div class="item-content">
+                        1ETH will be airdropped to two of our early adopters and holders of Zakura X. Zakura X will develop a liquidity pool in order to help stabilize the price of Zakura X. 
+                        These NFTs bought will be given back through giveaways to community members and saved for further events.
+                    </div>
+                    <div class="vertical-line"></div>
+                </li>
+                <li>
+                    <div class="item-porcent"><button><i class="rocket icon"></i></button></div>
+                    <div class="item-content">
+                        <h5>Future Works</h5>
+                        The team has been working on developing passive income for Zakura X holders; 
+                        some Zakura X nfts will generate more passive income than others. 
+                        Our goal is to bring the world of Anime into the world of Blockchain 
+                        with Anime community partnerships and much more that will make Zakura X 
+                        a desirable NFT to hold. The future of Zakura X will be community driven by 
+                        deciding and voting on parts of the future roadmaps as the team continues 
+                        to add utility. We will also be looking into partnering with different 
+                        Anime artist to add something special to the Zakura X collection.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="team" #team>
+            <h2>The team</h2>
+            <p>
+                The team is a group of 6 with the love of Anime, 
+                Art, and Blockchain. The team of six joined forces to bring the NFT 
+                community original Anime art while working towards bringing 
+                Anime artist, Manga writers, and Animators to the world of Blockchain!
+            </p>
+            <div class="item">
+                <img src="../../assets/team/5.png" alt="5.png">
+                <div class="right-item">
+                    <h4>Beko</h4>
+                    <p>Developer & CTO.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../assets/team/1.png" alt="1.png">
+                <div class="right-item">
+                    <h4>Desi</h4>
+                    <p>Artist, Designer.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../assets/team/2.png" alt="2.png">
+                <div class="right-item">
+                    <h4>Emmz</h4>
+                    <p>Operations Manager.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../assets/team/3.png" alt="3.png">
+                <div class="right-item">
+                    <h4>Tom</h4>
+                    <p>Community Manager .</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../assets/team/4.png" alt="4.png">
+                <div class="right-item">
+                    <h4>Mark</h4>
+                    <p>Content Manager.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../assets/team/6.png" alt="6.png">
+                <div class="right-item">
+                    <h4>Juubi</h4>
+                    <p>Web Developer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq" #faq>
+            <h2>FAQ</h2>
+            <ul class="ul-faq">
+                <li (click)="accordionFaq('answer1', $event.target );">
+                    What is Zakura X?<span><i class="caret down icon"></i></span>
+                    <p class="answer" id="answer1">
+                        Zakura X is a collection of 9,999 unique Anime Style NFTs on the Ethereum Blockchain. 
+                        All traits are hand-drawn by anime artist Desi.
+                    </p>
+                </li>
+                <li (click)="accordionFaq('answer2', $event.target );">
+                   Why was Zakura X created? <span><i class="caret down icon"></i></span>
+                    <p class="answer" id="answer2">
+                        Zakura X  was created with the goal of bring the world of 
+                        Anime into the world of Blockchain with partnerships and unique utility unseen in the NFT space. 
+                    </p>
+                </li>
+                <li (click)="accordionFaq('answer3', $event.target );">
+                   Where can you Mint a Zakura X?<span><i class="caret down icon"></i></span>
+                    <p class="answer" id="answer3">
+                        Minting will be healed on the Zakura X website or directly through the smart contract. 
+                        Smart contract, time, and date of release will be announced on our discord and updated on the website. 
+                    </p>
+                </li>
+                <li (click)="accordionFaq('answer4', $event.target );">
+                   How long after mint will the Zakura X NFT's be revealed?<span><i class="caret down icon"></i></span>
+                    <p class="answer" id="answer4">
+                        Zakura X is a collection of 9,999 unique Anime Style NFTs on the Ethereum Blockchain. 
+                        The reveal will be 48hours after all Zakura NFTs are minted. 
+                    </p>
+                </li>
+                <li (click)="accordionFaq('answer5', $event.target );">
+                   What Blockchain is Zakura X on?<span><i class="caret down icon"></i></span>
+                    <p class="answer" id="answer5">
+                        Zakura X is an ERC-721 token on the Ethereum Blockchain file hosting is IPFS.
+                    </p>
+                </li>
+                <li (click)="accordionFaq('answer6', $event.target );">
+                   How many Zakura X will the team mint?<span><i class="caret down icon"></i></span>
+                    <p class="answer" id="answer6">
+                        59 Zakura X will be minted for the team, giveaways, and marketing. 
+                        The team will also be adding to a community fund where more Zakura X NFT's will be added for giveaways and marketing.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <img (click)="sendAction('top');" src="../../../assets/9.png" alt="9.png">
+    <h1 (click)="sendAction('top');">Zakura X</h1>
+    <h2>
+        <a href="#" target="_blank"><i class="twitter icon"></i></a>
+        <a href="#" target="_blank"><i class="instagram icon"></i></a>
+        <a href="#" target="_blank"><i class="discord icon"></i></a>
+    </h2>
+</footer>
+
